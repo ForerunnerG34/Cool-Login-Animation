@@ -1,0 +1,58 @@
+.editableTitleBox {
+    border: none;
+    background-color: transparent;
+    font-weight: 600 !important;
+    width: fit-content;    
+}
+
+    .editableTitleBox div {
+        background-color: transparent;
+        font-weight: 600;
+        padding: 0;
+        width: 100%;
+        padding: 5px 10px;
+        color:transparent;
+        white-space:pre;
+        margin-right:25px;
+        cursor:default;
+        height:1px;
+        overflow:hidden;
+        font-size: 1.4em;
+    }
+
+
+    .editableTitleBox input {
+        outline: 0;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        background-color: transparent;
+        font-weight: 600;
+        font-size: 1.4em;
+        width: 100%;
+        padding: 10px;
+        -webkit-transition: all 200ms ease-in;
+        -moz-transition: all 200ms ease-in;
+        -o-transition: all 200ms ease-in;
+        -ms-transition: all 200ms ease-in;
+        transition: all 200ms ease-in;
+        transition-delay: 0ms;
+    }
+
+        .editableTitleBox input:hover {
+            background-color: var(--editableTitleHoverBackground);
+        }
+
+        .editableTitleBox input:focus {
+            background-color: var(--editableTitleFocusBackground);
+            border: 1px solid var(--editableTitleFocusBorderColor);
+        }
+
+        .transaction-toolbar{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+
+        #transactions-list >div.ms-Stack >div.ms-Stack{
+            transition: box-shadow 0.2s ease-in-out;
+        }

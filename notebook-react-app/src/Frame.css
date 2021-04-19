@@ -1,0 +1,61 @@
+@keyframes expand-left-animation {
+    0% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: -280px;
+    }
+}
+
+@keyframes reduce-left-animation {
+    0% {
+        margin-left: -280px;
+    }
+    100% {
+        margin-left: 0px;
+        box-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px;
+    }
+}
+
+
+.motion-reduce-left{
+    top: 64px!important;    
+    right: 64px!important;
+    bottom: 64px!important;
+    opacity: 1!important;
+    margin-left: -208px;
+    animation-name: reduce-left-animation!important;
+    animation-fill-mode: forwards;
+    animation-duration: 250ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    background: var(--bgColor)!important;
+}
+
+.motion-expand-left{
+    animation-name: expand-left-animation!important;
+    animation-fill-mode: forwards;
+    animation-duration: 250ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    background: var(--bgColor)!important;
+    margin-left: 408px;
+
+}
+
+.panel-default{
+    top: 64px;
+    left: 408px;
+    right: 64px;
+    bottom: 64px;
+    position: absolute;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background: var(--bgColor);
+}
+
+#transactions-list.navigated-out{
+    margin-left: -280px;
+}

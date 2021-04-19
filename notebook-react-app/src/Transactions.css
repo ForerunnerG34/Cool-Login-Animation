@@ -1,0 +1,63 @@
+#transactions-list{
+ overflow-y: auto;
+ overflow-x: hidden;   
+ padding: 0 20px 20px 20px;
+}
+
+#transactions-list >div >div:not(.content-wrapper){
+    position: sticky;
+    z-index: 1;
+    top:0;
+    background-color: var(--bgaColor);
+    margin-right: -40px;
+    margin-left: -20px;
+    padding:10px 20px;
+}
+
+.ms-DetailsRow-cell.createdAt{
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+.ms-DetailsRow-cell.runningBalance,
+.ms-DetailsRow-cell.amount{
+    text-align: right;
+    font-size: 1.2em;
+    align-items: center;
+}
+.ms-DetailsRow-cell.name{
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.ms-DetailsRow-cell.amount >span{
+    border:0px solid black;
+    border-radius: var(--borderRadius);
+    padding: 3px 5px;
+    font-weight: 600;
+}
+
+.ms-DetailsRow-cell.amount >span.debit{
+    color:var(--debitFg);
+    border-color: var(--debitFg);
+    background-color: var(--debitBg);
+}
+
+.ms-DetailsRow-cell.amount >span.credit{
+    color:var(--creditFg);
+    border-color: var(--creditFg);
+    background-color: var(--creditBg);
+}
+
+.ms-ChoiceField,
+.ms-ChoiceField-field,
+.ms-ChoiceField-field:hover,
+.ms-ChoiceField-field.is-checked,
+.ms-Dialog-main,
+.transaction-toolbar >button,
+.ms-Callout,
+.ms-Callout-main,
+.ms-Button{
+    border-radius: var(--borderRadius);
+}

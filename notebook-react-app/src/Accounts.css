@@ -1,0 +1,89 @@
+@keyframes show-accounts-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes selecting-account-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.98);
+    }
+}
+
+@keyframes selected-account-animation {
+    0% {
+        transform: scale(0.98);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+ul.nav-accounts{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    margin-left: -28px;
+    margin-top: -28px;
+    opacity: 0;
+    display: none;
+    width: 280px;
+}
+
+ul.nav-accounts.visible{
+    display: block;
+    animation-name: show-accounts-animation;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+ul.nav-accounts li {
+    display: block;
+    cursor: default;
+    padding: 5px 10px;
+}
+
+ul.nav-accounts li >div{
+    cursor: default;
+    border-radius: 4px;
+    color: var(--accountListForeground);  
+}
+
+ul.nav-accounts li:hover >div{
+    background-color: var(--accountListHoverBackground);
+    color: var(--accountListHoverForeground);
+}
+
+
+ul.nav-accounts li.active-item >div{
+    background-color: var(--accountListSelectedBackground);
+    color: var(--accountListSelectedForeground);  
+}
+
+ul.nav-accounts li.active-item{
+    animation-name: selected-account-animation;
+    animation-fill-mode: forwards;
+    animation-duration: 250ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;}
+
+ul.nav-accounts li.activating-item {
+    animation-name: selecting-account-animation;
+    animation-fill-mode: forwards;
+    animation-duration: 50ms;
+    animation-delay: 0ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;}
+

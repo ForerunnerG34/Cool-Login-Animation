@@ -1,0 +1,44 @@
+:root {
+  --alertColor: #F43E5C;
+  --bgColor: #F6F0E9;
+  --bgaColor: #F6F0E9ee;
+  --creditBg: trasnparent;
+  --creditFg: #76BABD;
+  --debitBg: trasnparent;
+  --debitFg: #ED7F80;
+
+  --accountListForeground:#3F444B;
+  --accountListSelectedForeground:#3F444B;
+  --accountListSelectedBackground:#E7C283;
+  --accountListHoverBackground:#EDE5DE;
+  --accountListHoverForeground:#3F444B;
+
+  --navigationSelectedColor:#BA8967;
+
+  --navBackground:#ffffff66;
+
+  --editableTitleHoverBackground:#EDE5DE;
+  --editableTitleFocusBackground:#dad3cd;
+  --editableTitleFocusBorderColor:#E7C283;
+
+  --borderRadius: 8px;
+}
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+#root, html, body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height:100%;
+  overflow:hidden;
+  color:#323130; 
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

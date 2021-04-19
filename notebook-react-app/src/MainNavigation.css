@@ -1,0 +1,22 @@
+ul.nav-icons{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+}
+
+ul.nav-icons li {
+    display: block;
+    border-left: 3px solid transparent;
+}
+
+ul.nav-icons li.active-item {
+    border-left: 3px solid var(--navigationSelectedColor);
+}
+
+ul.nav-icons li img{
+    width: 25px;
+    display: block;
+    margin: auto;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+}
